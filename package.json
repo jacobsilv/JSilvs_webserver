@@ -1,0 +1,22 @@
+{
+  "name": "jsilvs_webserver",
+  "version": "1.0.0",
+  "description": "first website server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jacobsilv/JSilvs_webserver.git"
+  },
+  "keywords": [
+    "jsilvs"
+  ],
+  "author": "ivan/jacob",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jacobsilv/JSilvs_webserver/issues"
+  },
+  "homepage": "https://github.com/jacobsilv/JSilvs_webserver#readme"
+}
