@@ -1,6 +1,171 @@
+
 <HTML>
-<HEAD><LINK rel="stylesheet" href="style.css"></HEAD>
-	<BODY>
-	<DIV id="blah">HELLOO!</DIV>
-	</BODY>
+<HEAD><LINK rel="stylesheet" href="style.css">
+
+</HEAD>
+
+
+
+<BODY style="color:black">
+
+
+	 <script type="text/javascript">
+
+
+
+
+	function showTab(selected, total) {
+
+	  for(i = 1; i <= total; i += 1)
+	  {
+	  	
+	    	
+	    	if (selected == i){
+		    	if (document.getElementById('tabs-' + selected).style.display == 'block'){
+		    		document.getElementById('tabs-' + i).style.display = 'none';
+		    	}else{
+					document.getElementById('tabs-' + selected).style.display = 'block';
+		    	}
+				
+	    	}else {
+	    		document.getElementById('tabs-' + i).style.display = 'none';
+	    	}
+		}
+	}
+
+	function loading() {
+    	var myWindow = window.open("Window");
+    	myWindow.document.write("<image src='loading.gif' style='position:relative;left:25%'><br></a><p style='position:relative;left:42.5%'>Loading!</p>");
+	}
+
+	function virus(){
+		for (i =1; i <=10; i++){
+			alert('Press OK 4 Virus '+i);
+		}
+	}
+	  	
+		
+	</script>
+
+
+
+	<marquee behavior="scroll" direction="left">
+
+	<img src="sweep.gif"  alt="sweep">
+	</marquee>
+
+
+
+	<ul class="side bar tabs">
+
+		
+
+
+		<li id = "tabs1" onclick = "showTab(1,5)">
+			<h1 id = "id01"  
+			onMouseOver="this.style.color='#FFF'" 
+	   		onMouseOut="this.style.color='#000'">
+	   		JACOB SILVS
+	   		</h1>
+   		</li>
+
+
+		<div id="tabs-1" style="display: none" >
+			
+			
+			<img src="bmo.gif" style="width:200; height:200; position:relative; left:275px" alt="Swimming fish" >
+			<br>
+
+			<a id = "face" href="https://www.facebook.com/jacob.silverman.73" target="__blank" style="position:relative; left:275px">Facebook</a>
+			<br>
+
+	
+
+		</div>
+
+
+
+		
+
+
+
+		<li id = "tabs3" onclick = "showTab(3,5)">
+			<h1 id = "id03" style="color:#999999"
+			onMouseOver="this.style.color='#FFF'" 
+	   		onMouseOut="this.style.color='#999999'">About Me</h1>
+   		</li>
+
+		<div id="tabs-3" style="display: none">
+			
+		  	<video width="320" height="240" audio="false" style="position:relative; left:225px" controls muted loop autoplay><source src="Js.mp4" type="video/mp4"> </video>
+		  	<br>
+		  	<video width="320" height="240" audio="false" style="position:relative; left:225px" controls muted loop autoplay><source src="Tre.MOV" type="video/mp4"> </video>
+		</div>
+
+
+
+		<li id = "tabs4" onclick = "showTab(4,5)">
+			<h1 id = "id04" style="color:0033cc"
+			onMouseOver="this.style.color='#FFF'" 
+	   		onMouseOut="this.style.color='#0033cc'">Resumé
+	   		</h1>
+   		</li>  
+
+	  	<div id="tabs-4" style="display: none"  class = "boxWhite">
+	  	<img src="Resume.pdf" alt="Mountain View" style="position:relative; left:10%"><br>
+	  		
+		</div>
+
+
+		<li id = "tabs2" onclick = "showTab(2,5)">
+			<h1 id = "id02" style="color:#ff6633"
+
+			onMouseOver="this.style.color='#FFF'" 
+	   		onMouseOut="this.style.color='#ff6633'">Hacks
+	   		</h1>
+   		</li>
+
+		<div id="tabs-2" style="display: none" >
+		
+			<p id ="smallText" style="position:relative; left:200px" >
+
+			<img src="Fin.pdf" alt="Mountain View">
+			<br>
+			
+			<button 
+			onclick="virus();
+			loading()"
+			class="boxBlue"
+			style="position:relative; left:125px" >
+			I Dare You</button>
+
+		
+			</p> 
+		</div>
+
+
+
+		<li id = "tabs5" onclick = "showTab(5,5)">
+			<h1 id = "id05" style="color:000033" 
+			onMouseOver="this.style.color='#FFF'" 
+	   		onMouseOut="this.style.color='#000033'">Extras</h1>
+   		</li>  
+
+	  	<div id="tabs-5" style="display: none">
+	  		<img src="cat.gif" alt="Mountain View" style="width:325px;height:251px;">
+
+			<img src="dog.gif" alt="Mountain View" style="float:middle;"><br>
+		</div>
+
+
+
+	</ul>
+
+	<marquee behavior="scroll" direction="right">
+
+	<img src="pokemon.gif" style="width:200; height:200" alt="pokemon">
+	</marquee>
+
+
+</BODY>
 <HTML>
