@@ -1,5 +1,81 @@
-#blah {
-	background-color: red;
-	width: 100px;
+
+
+#id01 {
+
+	background: -webkit-repeating-linear-gradient(45deg, black,white);
+	font-size:420%;
+ 
+	width: 100%;
 	height: 100px;
+
+}
+#id02 {
+	background: -webkit-repeating-linear-gradient(45deg, #ff6633, white);
+
+	font-size:350%;
+	width: 100%;
+	height: 100px;
+
+}
+#id03 {
+	background: -webkit-repeating-linear-gradient(45deg, #999999, white);
+
+	font-size:350%;
+	width: 100%;
+	height: 100px;
+}
+
+#id04 {
+	background: -webkit-repeating-linear-gradient(45deg, #0033cc, white);
+
+	font-size:350%;
+	width: 100%;
+	height: 100px;
+}
+#id05 {
+	background: -webkit-repeating-linear-gradient(45deg, #000033, white);
+
+	
+	font-size:350%;
+	width: 100%;
+	height: 100px;
+}
+#smallText {
+	
+	font-size:150%;
+
+}
+
+#face {
+	font-size: 250%;
+}	
+
+.boxBlue {
+  background: #ffffff;
+
+  transition-property: background;
+  transition-duration: 10s;
+  transition-timing-function: linear;
+}
+.boxBlue:hover {
+	
+  background: #ff0000;
+
+
+}
+
+
+.boxWhite {
+  background: #ffffff;
+
+  transition-property: background;
+  transition-duration: 2s;
+  transition-timing-function: linear;
+}
+.boxWhite:hover {
+	
+  background: #000000;
+  
+
+
 }
