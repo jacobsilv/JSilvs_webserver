@@ -1,67 +1,25 @@
 
 <HTML>
-<HEAD><LINK rel="stylesheet" href="style.css">
+<HEAD>
+<LINK rel="stylesheet" href="style.css">
+<script src="function.js"></script>
 
 </HEAD>
 
 
 
 <BODY style="color:black">
+<br><br><br><br><br><br>
+<br><br><br><br><br><br>
+<br><br><br><br><br><br>
+<br><br><br><br><br><br>
+<br><br><br><br><br>
 
+	<!-- <CENTER><img src="gun.pdf" style="width:50%;height:50%;position:relative;left:20px"></CENTER> -->
 
-	 <script type="text/javascript">
+	<ul style="list-style-type: none;" class="side bar tabs" >
 
-
-
-
-	function showTab(selected, total) {
-
-	  for(i = 1; i <= total; i += 1)
-	  {
-	  	
-	    	
-	    	if (selected == i){
-		    	if (document.getElementById('tabs-' + selected).style.display == 'block'){
-		    		document.getElementById('tabs-' + i).style.display = 'none';
-		    	}else{
-					document.getElementById('tabs-' + selected).style.display = 'block';
-		    	}
-				
-	    	}else {
-	    		document.getElementById('tabs-' + i).style.display = 'none';
-	    	}
-		}
-	}
-
-	function loading() {
-    	var myWindow = window.open("Window");
-    	myWindow.document.write("<image src='loading.gif' style='position:relative;left:25%'><br></a><p style='position:relative;left:42.5%'>Loading!</p>");
-	}
-
-	function virus(){
-		for (i =1; i <=10; i++){
-			alert('Press OK 4 Virus '+i);
-		}
-	}
-	  	
-		
-	</script>
-
-
-
-	<marquee behavior="scroll" direction="left">
-
-	<img src="sweep.gif"  alt="sweep">
-	</marquee>
-
-
-
-	<ul class="side bar tabs">
-
-		
-
-
-		<li id = "tabs1" onclick = "showTab(1,5)">
+		<li id = "tabs1" onclick = "showTab(1,3)" style="list-style-type: none;">
 			<h1 id = "id01"  
 			onMouseOver="this.style.color='#FFF'" 
 	   		onMouseOut="this.style.color='#000'">
@@ -70,102 +28,173 @@
    		</li>
 
 
-		<div id="tabs-1" style="display: none" >
+		<div id="tabs-1" style="display: none">
+
 			
-			
-			<img src="bmo.gif" style="width:200; height:200; position:relative; left:275px" alt="Swimming fish" >
+		  	<marquee direction="down" behavior="alternate" >
+			<marquee behavior="alternate" scrollamount="35">
+
+			<a href="https://www.facebook.com/jacob.silverman.73"> <img src="squidward.gif"  style="width:200px;height:200px;position:relative"alt="sweep"></a>
+			</marquee>
+			</marquee>
 			<br>
-
-			<a id = "face" href="https://www.facebook.com/jacob.silverman.73" target="__blank" style="position:relative; left:275px">Facebook</a>
-			<br>
-
-	
-
+			<!-- <CENTER><h1 style="background:white;width:100px">Bio</h1>
+			<p style="background:white">I can run like a panther because im from san diego</p></CENTER> -->
 		</div>
-
-
 
 		
-
-
-
-		<li id = "tabs3" onclick = "showTab(3,5)">
-			<h1 id = "id03" style="color:#999999"
+		<li id = "tabs2" onclick = "showTab(2,3)">
+			<h1 id = "id01" style="color:black;"
 			onMouseOver="this.style.color='#FFF'" 
-	   		onMouseOut="this.style.color='#999999'">About Me</h1>
+	   		onMouseOut="this.style.color='black'">CONTACT</h1>
    		</li>
 
-		<div id="tabs-3" style="display: none">
+
+		<CENTER><div id="tabs-2" style="display: none" class="boxWhite" >
 			
-		  	<video width="320" height="240" audio="false" style="position:relative; left:225px" controls muted loop autoplay><source src="Js.mp4" type="video/mp4"> </video>
-		  	<br>
-		  	<video width="320" height="240" audio="false" style="position:relative; left:225px" controls muted loop autoplay><source src="Tre.MOV" type="video/mp4"> </video>
+			
+  			<img  src = "loading.gif" style="width:330; height:300; position:relative; left:105px" >
+			
+			<img  src="bmo.gif" style="width:200; height:200; position:relative; right:150px" alt="bmo" >
+
+			
+			<br >
+
+			
+			
+			<a href="https://www.facebook.com/jacob.silverman.73" target="__blank" style="position:relative; left:-45px; color:white" ><img src="facebook.png" style="width:50;height:50"></a>
+
+			<a href="mailto:js6135@nyu.edu?subject=website" target="__blank" style="position:relative; left:-15px; color:white" ><img src="email.png" style="width:50;height:50"></a>
+
+			<a  href="https://www.linkedin.com/in/jacob-silverman-ab99a2b0" target="__blank" style="position:relative; left:15px; color:white" ><img src="linked.png" style="width:50;height:50"></a>
+
+			<a href="https://instagram.com/hardpersontofind/" target="__blank" style="position:relative; left:45px; color:white" ><img src="instagram.png" style="width:50;height:50"></a>
+			
+
 		</div>
+		</CENTER>
 
 
 
-		<li id = "tabs4" onclick = "showTab(4,5)">
-			<h1 id = "id04" style="color:0033cc"
+
+		<li id = "tabs3" onclick = "showTab(3,3)">
+			<h1 id = "id01" style="color:black;" 
 			onMouseOver="this.style.color='#FFF'" 
-	   		onMouseOut="this.style.color='#0033cc'">Resumé
-	   		</h1>
+	   		onMouseOut="this.style.color='black'">WORK</h1>
    		</li>  
 
-	  	<div id="tabs-4" style="display: none"  class = "boxWhite">
-	  	<img src="Resume.pdf" alt="Mountain View" style="position:relative; left:10%"><br>
+
+	  	<div id="tabs-3" style="display: none">
+
+	  		<CENTER><ul class="nav nav-tabs" style="position:relative;left:75px">
+
+			  <li class="active" onclick = "showSubTab(1,4)" 
+			  	onMouseOver="this.style.color='#FFF'" 
+	   			onMouseOut="this.style.color='black'">
+			  	<div href="#" style="cursor: pointer;font-size:200%;">Illustrations</div></li>
+
+			  	<a id="subtabs-1" style="display: none;position:relative;right:95px" >
+			  	<br><br>
+			  		<CENTER>
+			  		<img src="rum.pdf" style="width:300;height:300">
+			  		<img src="groovy.pdf" style="width:300;height:300;background:white">
+			  		<img src="person.pdf" style="width:300;height:300">
+			  		</CENTER>
+
+    			</a>
+    			<br>
+
+			  <li onclick = "showSubTab(2,4)" 
+			  	onMouseOver="this.style.color='#FFF'" 
+	   			onMouseOut="this.style.color='black'">
+			  	<div href="#" style="cursor: pointer;font-size:200%;">Videos</div></li>
+				  <a id="subtabs-2" style="display: none;position:relative;right:95px" >
+				  <br><br>
+				  	
+				  	<CENTER><video width="325" height="251" audio="false"  controls muted loop autoplay><source src="Js.mp4" type="video/mp4"> </video>
+	    			<video width="325" height="251" audio="false"  controls muted loop autoplay><source src="Tre.MOV" type="video/mp4"> </video> </CENTER>
+				  </a>
+				  <br>
+			  <li onclick = "showSubTab(3,4)" 
+			 	onMouseOver="this.style.color='#FFF'" 
+	   			onMouseOut="this.style.color='black'">
+	   			<div href="#" style="cursor: pointer;font-size:200%;">Code</div></li>
+			  	<a id="subtabs-3" style="display: none;position:relative;right:95px" >
+			  	<br>
+					<!-- <img src="code.png" style="width:800;height:350;position:relative; left:50px">-->
+					<div style="text-align: left; position:relative; left:285px"> 
+					<b>tell</b> <i><mark class= "blue">application</mark></i> "Terminal" <br>
+
+					<p style="position:relative;left:35px">
+						<b><mark class= "blue">activate</mark></b><br>
+
+						<b>tell</b> <i><mark class= "blue">application</mark></i> "System Events" <b>to <mark class= "blue">keystroke</mark></b> "t"<mark class="blue"> using</mark> <i><mark class= "purple">command down</mark></i><br>
+
+						<b>repeat while</b> <mark class= "purple">contents</mark> <b>of</b> <mark class= "purple">selected tab</mark> <b>of</b> <i><mark class= "blue">window</mark></i> 1 <b>starts with</b> <mark class= "purple">linefeed</mark> <br>
+
+						<mark class= "blue"><b>delay</b></mark> 0.01<br>
+
+						<b>end repeat</b><br>
+
+						<b><mark class= "blue">do script</mark></b> "echo 'while(true); do killAll Dock; killAll Safari; done' > blocker.sh" <mark class= "blue">in <i>window</i></mark> 1<br>
+
+						<b><mark class= "blue">do script</mark></b> "nohup sh blocker.sh >/dev/null &amp" <mark class= "blue">in <i>window</i></mark> 1<br>
+
+					</p>
+					<b>end tell</b><br></div>
+
+					<p id ="smallText" style="position:relative; left:200px" >
+			
+			
+					<div id="cf">
+						<CENTER><img class="bottom" src="Fin.pdf" alt="Mountain View" style="left:65"></CENTER>
+						<CENTER><img class="top" src="cat.gif" style="width:250;height:250"></CENTER>
+					</div>
+					
+					<CENTER><button 
+					onclick="virus();
+					loading();"
+					class="boxRed" style="cursor:pointer">
+					I Dare You</button></CENTER>
+
+				
+					</p> 
+					
+					
+				</a>
+				<br>
+				<li onclick = "showSubTab(4,4)" 
+					onMouseOver="this.style.color='#FFF'" 
+	   				onMouseOut="this.style.color='black'">
+				<div href="#" style="cursor: pointer;font-size:200%;">Resume</div>
+					
+				</li>
+				<br><br>
+				<!--<div id="subtabs-4" style="display: none;position:relative;right:95px"  class = "boxRed">-->
+
+				<div id="subtabs-4" style="display: none;position:relative;right:95px" >
+
+
+		  		<CENTER><img src="frog.gif" alt="Mountain View"></CENTER><br>
+		  		<CENTER><img src="Resume.pdf" alt="Mountain View">
+		  		</CENTER><br>
+		  		
+				</div>
+
+			</ul></CENTER>
+	   
 	  		
 		</div>
 
 
-		<li id = "tabs2" onclick = "showTab(2,5)">
-			<h1 id = "id02" style="color:#ff6633"
-
-			onMouseOver="this.style.color='#FFF'" 
-	   		onMouseOut="this.style.color='#ff6633'">Hacks
-	   		</h1>
-   		</li>
-
-		<div id="tabs-2" style="display: none" >
-		
-			<p id ="smallText" style="position:relative; left:200px" >
-
-			<img src="Fin.pdf" alt="Mountain View">
-			<br>
-			
-			<button 
-			onclick="virus();
-			loading()"
-			class="boxBlue"
-			style="position:relative; left:125px" >
-			I Dare You</button>
-
-		
-			</p> 
-		</div>
-
-
-
-		<li id = "tabs5" onclick = "showTab(5,5)">
-			<h1 id = "id05" style="color:000033" 
-			onMouseOver="this.style.color='#FFF'" 
-	   		onMouseOut="this.style.color='#000033'">Extras</h1>
-   		</li>  
-
-	  	<div id="tabs-5" style="display: none">
-	  		<img src="cat.gif" alt="Mountain View" style="width:325px;height:251px;">
-
-			<img src="dog.gif" alt="Mountain View" style="float:middle;"><br>
-		</div>
-
-
-
 	</ul>
-
-	<marquee behavior="scroll" direction="right">
+	<br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<!-- <marquee behavior="scroll" direction="right">
 
 	<img src="pokemon.gif" style="width:200; height:200" alt="pokemon">
-	</marquee>
-
+	</marquee> -->
+	
 
 </BODY>
 <HTML>
+
