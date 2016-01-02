@@ -3,7 +3,7 @@
 #id01 {
 
 
-	/*background: -webkit-repeating-linear-gradient(45deg,white, #EEE,white);*/
+	background: -webkit-repeating-linear-gradient(45deg,white, #EEE,white);
 	
 	font-size:300%;
 	text-align: center;
@@ -14,7 +14,7 @@
 	cursor:pointer;
 	outline-style: solid;
 	outline-width: 1px;
-	outline-color:white;
+	outline-color:black;
 
 }
 
@@ -30,22 +30,8 @@
 	font-size: 250%;
 }	
 
-.boxRed {
-	opacity:0%;
-
-	transition-property: background;
-	transition-duration: 10s;
-	transition-timing-function: linear;
 }
-.boxRed:hover {
-	
-	background: #EC008B;
-
-
-}
-
-
-.boxWhite {
+.boxBlack {
 	opacity: 0%;
 
 	width:95%;
@@ -54,9 +40,24 @@
 	transition-duration: 5s;
 	transition-timing-function: linear;
 }
-.boxWhite:hover {
+.boxBlack:hover {
 	
 	background: #000000;
+  
+}
+
+.boxWhite {
+	opacity: 0%;
+
+	width:100%;
+
+	transition-property: background;
+	transition-duration: 5s;
+	transition-timing-function: linear;
+}
+.boxWhite:hover {
+	
+	background: #fff;
   
 }
 
@@ -91,7 +92,7 @@
 .tabs ul li {
     float: center;
     /*background: white;*/
-    border: 1px #aaa solid;
+    border: 1px #000 solid;
     margin-right: 200;
     position: relative;
 
@@ -109,10 +110,10 @@
 
 .tabInner {
     clear: both;
-    border: 5px solid #aaa;
+    border: 5px solid #000;
     height: 200px;
     overflow: hidden;
-    background: #eee;
+    background: #000;
 }
 
 .tabInner div {
@@ -136,11 +137,11 @@ mark.blue {
 
 html { 
 
-	background: url(box.gif) no-repeat top center fixed;/*fixed*/
-
+	/*background: url(loading.gif) no-repeat center center fixed ;*//* no-repeat fixed*/
+	background-position: 0px 0px;
 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
-	background-size: 100%;
+	background-size: cover;
 }
